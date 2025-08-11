@@ -1,5 +1,6 @@
 # learnPython
 https://metanit.com/python/tutorial/2.2.php
+https://www.codewars.com/
 
 | Day | Topic                                               | QA-Focused Practice Task                              | Resource                                                               |
 | --- | --------------------------------------------------- | ----------------------------------------------------- | ---------------------------------------------------------------------- |
