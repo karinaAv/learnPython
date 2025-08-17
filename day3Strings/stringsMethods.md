@@ -1,6 +1,7 @@
 - https://metanit.com/python/tutorial/5.1.php
 - https://metanit.com/python/tutorial/5.2.php
 - https://metanit.com/python/tutorial/5.3.php
+- https://ru.hexlet.io/courses/python-declarative-programming/lessons/generator-expressions/theory_unit
 
 #Tasks
 Beginner (★☆☆)
