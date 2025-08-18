@@ -104,3 +104,31 @@ def format_string(string_input: str, name: str, age: int) -> str:
 
 
 print(format_string(string_input="My name is {name} and I am {age} years old", name="Alice", age=25))
+
+
+# Advanced (★★★)
+# 11. Find all unique words in a string
+def find_all_unique_words(string_input: str) -> list:
+    return list(set(string_input.split()))
+
+
+print(find_all_unique_words(string_input="apple orange apple banana"))
+
+
+# 12. Find the longest word in a sentence
+def find_longest_word(string_input: str) -> str:
+    words = string_input.split()
+    return max(words, key=len)
+
+
+print(find_longest_word(string_input="Python is amazing"))
+
+
+# 13. Check if two strings are anagrams
+def check_if_anagrams(first_string: str, second_string: str) -> bool:
+    first_string = ''.join(char for char in first_string.lower() if char.isalnum())
+    second_string = ''.join(char for char in second_string.lower() if char.isalnum())
+    return sorted(first_string) == sorted(second_string)
+
+
+print(check_if_anagrams(first_string="listen", second_string="silent"))
