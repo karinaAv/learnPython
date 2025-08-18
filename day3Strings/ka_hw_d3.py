@@ -1,5 +1,3 @@
-from idlelib.debugobj_r import remote_object_tree_item
-
 print('====================================')
 print('============= Beginner =============')
 print('====================================\n')
@@ -83,7 +81,7 @@ string = input("Enter a string: ")
 substring = input("Enter a substring: ")
 print(f'#V1\nInput:\nstring = {string}\nsubstring = {substring}\nOutput = {count_substrings(string, substring)}')
 print(f'#V2\nInput:\nstring = {string}\nsubstring = {substring}\nOutput = {count_substrings1(string, substring)}')
-
+print('NOTE: сount считает только не перекрывающие совпадения!!!')
 print('----------=====TASK 7=====----------')
 print('Replace all occurrences of a word using replace()\n'+
         'Input: "I like cats", replace "cats" with "dogs" → Output: "I like dogs"\n' +

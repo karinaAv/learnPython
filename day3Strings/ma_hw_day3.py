@@ -69,6 +69,7 @@ def count_occurrences_advanced(string_input: str, substring_input: str) -> int:
     substring_input = substring_input.lower()
     return string_input.count(substring_input)
 
+print('NOTE: сount считает только не перекрывающие совпадения!!!')
 
 print(count_occurrences_basic(string_input="banana", substring_input = "na"))
 print(count_occurrences_advanced(string_input="baNanA", substring_input="nA"))
