@@ -133,3 +133,4 @@ def check_if_anagrams(first_string: str, second_string: str) -> bool:
 
 
 print(check_if_anagrams(first_string="listen", second_string="silent"))
+
