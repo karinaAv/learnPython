@@ -3,7 +3,8 @@ print('Создай список из 10 чисел и выведи их сум�
 def get_sum_list_n(l: int):
     list_num = range(1, l + 1)
     print(f'list {list(list_num)}')
-    return sum(num for num in range(1, l + 1))
+    # return sum(num for num in range(1, l + 1)) = sum(list_num) wrong!
+    return sum(list_num)
 n = int(input('Enter length of the list N: '))
 print(get_sum_list_n(n))
 

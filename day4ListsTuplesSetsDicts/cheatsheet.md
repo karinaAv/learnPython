@@ -79,3 +79,12 @@ with open("test.log") as f:
 # - zip/enumerate: to compare or track index during loops
 # - sorted(key=...): custom sort logic
 # - generators: for large/test data without using too much memory
+
+[//]: # (a, b = [1, 2]           # a=1, b=2)
+
+[//]: # (x, y, z = &#40;10, 20, 30&#41;  # кортеж/список/любой итерируемый)
+
+[//]: # ()
+[//]: # (Andreeva Margarita, [21/08/2025 5:51 pm])
+
+[//]: # (вложенная распаковка &#40;x, &#40;y, z&#41;&#41; = &#40;1, &#40;2, 3&#41;&#41;     # x=1, y=2, z=3)

@@ -65,7 +65,7 @@ print(find_index_basic(new_list=[1, 2, 3], element=3))
 def find_index_advanced(new_list: list, element) -> int:
     return new_list.index(element)
 
+def find_index_advanced1(new_list: list, element: int) -> int:
+    return next((i for i, num in enumerate(new_list) if num == element), -1)
 
 print(find_index_advanced(new_list=[1, 2, 3], element=1))
-
-
