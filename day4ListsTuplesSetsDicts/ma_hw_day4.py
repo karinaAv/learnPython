@@ -1,3 +1,4 @@
+# Простые (1–5)
 # 1. Создай список из 10 чисел и выведи их сумму.
 def create_list_and_print_sum() -> int:
     new_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
@@ -68,4 +69,48 @@ def find_index_advanced(new_list: list, element) -> int:
 def find_index_advanced1(new_list: list, element: int) -> int:
     return next((i for i, num in enumerate(new_list) if num == element), -1)
 
+
 print(find_index_advanced(new_list=[1, 2, 3], element=1))
+
+
+# Средние (6–10)
+# 6. Отсортируй список по возрастанию и убыванию.
+def sort_list_asc_desc(new_list: list):
+    return [sorted(new_list), sorted(new_list, reverse=True)]
+
+
+print(sort_list_asc_desc(new_list=[4, 6, 3, 2, 0]))
+
+
+# 7. Выведи второй по величине элемент.
+def find_second_element(new_list: list) -> int:
+    return sorted(new_list)[1]
+
+
+print(find_second_element(new_list=[4, 0, 1, -10]))
+
+
+# 8. Сдвинь список на 1 элемент вправо (циклический сдвиг).
+def cyclic_shift(new_list: list) -> list:
+    return new_list[-1:] + new_list[:-1]
+
+
+print(cyclic_shift(new_list=[-6, 0, 6, -12, 1221]))
+
+
+# 9. Объедини два списка в один, убрав повторяющиеся элементы.
+def merge_two_lists(new_list_one: list, new_list_two: list) -> list:
+    return list(set(new_list_one) | set(new_list_two))
+
+
+print(merge_two_lists(new_list_one=[-5, 0, 1, 1, 1], new_list_two=[11, 0, 222]))
+
+
+# 10. Раздели список чисел на два списка: чётные и нечётные.
+def split_even_odd(new_list: list[int]) -> tuple[list[int], list[int]]:
+    evens = [n for n in new_list if n % 2 == 0]
+    odds = [n for n in new_list if n % 2 != 0]
+    return evens, odds
+
+
+print(split_even_odd([1, 2, 3, 4, 0, -5]))
