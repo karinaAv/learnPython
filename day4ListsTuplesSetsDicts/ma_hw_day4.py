@@ -114,3 +114,4 @@ def split_even_odd(new_list: list[int]) -> tuple[list[int], list[int]]:
 
 
 print(split_even_odd([1, 2, 3, 4, 0, -5]))
+
