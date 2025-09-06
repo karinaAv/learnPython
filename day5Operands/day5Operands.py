@@ -34,7 +34,7 @@ a | b (побитовое ИЛИ)""")
 def get_bitwise(num_a, num_b):
     return num_a & num_b, num_a | num_b
 
-print(f'Result: ${get_bitwise(6, 3)}')
+print(f'Result: {get_bitwise(6, 3)}')
 
 print("""Задача 5 — Побитовое исключающее ИЛИ
 Есть числа x = 10 и y = 12.
@@ -42,7 +42,7 @@ print("""Задача 5 — Побитовое исключающее ИЛИ
 def get_xor_elements(x, y):
     return x ^ y
 
-print(f'Result: ${get_xor_elements(10, 12)}')
+print(f'Result: {get_xor_elements(10, 12)}')
 
 print("""Задача 6 — Общие элементы списков (побитовое И)
 Даны два списка:
@@ -61,7 +61,7 @@ def get_common_elements(list_a, list_b):
     print(list_b)
     return set(list_a) & set(list_b)
 
-print(f'Result: ${get_common_elements([1, 2, 3, 4, 5], [3, 4, 5, 6, 7])}')
+print(f'Result: {get_common_elements([1, 2, 3, 4, 5], [3, 4, 5, 6, 7])}')
 
 print("""Задача 7 — Все уникальные элементы из двух списков (побитовое ИЛИ)
 Есть два списка:
@@ -75,7 +75,7 @@ def get_unique_elements(list_a, list_b):
     print(list_b)
     return set(list_a) | set(list_b)
 
-print(f'Result: ${get_unique_elements(generate_list_with_random_values(5), generate_list_with_random_values(5))}')
+print(f'Result: {get_unique_elements(generate_list_with_random_values(5), generate_list_with_random_values(5))}')
 
 print("""Задача 8 — Симметрическая разность (побитовое XOR)
 Даны списки:
@@ -90,4 +90,4 @@ def get_symmetric_difference(list_a, list_b):
     print(list_b)
     return set(list_a) | set(list_b)
 
-print(f'Result: ${get_symmetric_difference(generate_list_with_random_values(5), generate_list_with_random_values(5))}')
+print(f'Result: {get_symmetric_difference(generate_list_with_random_values(5), generate_list_with_random_values(5))}')
